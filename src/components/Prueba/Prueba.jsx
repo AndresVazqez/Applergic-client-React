@@ -14,7 +14,7 @@ function Prueba({ props }) {
 
   
   const getProduct = async () => {
-    const res = await axios(`https://applergic-server.vercel.app/api/products/${data}`, {
+    const res = await axios(`https://applergic-server-react.vercel.app/api/products/${data}`, {
       headers: {
         Authorization: {
           toString() {
@@ -34,7 +34,7 @@ function Prueba({ props }) {
 
   const getUserById = async () => {
     const idStorage = JSON.parse(sessionStorage.getItem("id"));
-    const res = await axios(`https://applergic-server.vercel.app/api/users/${idStorage}`, {
+    const res = await axios(`https://applergic-server-react.vercel.app/api/users/${idStorage}`, {
       headers: {
         Authorization: {
           toString() {

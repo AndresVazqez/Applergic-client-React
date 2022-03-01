@@ -18,7 +18,7 @@ export default function MyComponent() {
   
   const postRating = () => {
     axios
-      .post("https://applergic-server.vercel.app/api/ratings/vote", {
+      .post("https://applergic-server-react.vercel.app/api/ratings/vote", {
         rating: rating,
       }, {
         headers: {

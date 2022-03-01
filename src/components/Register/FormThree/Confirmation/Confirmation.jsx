@@ -10,7 +10,7 @@ function Confirmation({ props, props2, props3, props4 }) {
     props3.map((item, index) => finalData.push(item[1]));
 
     axios
-      .post("https://applergic-server.vercel.app/api/users/register", {
+      .post("https://applergic-server-react.vercel.app/api/users/register", {
         image: props2.image,
         name: props2.name,
         email: props2.email,

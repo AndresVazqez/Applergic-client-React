@@ -50,7 +50,7 @@ function DiaryList() {
 
       const getProducts = async () => {
         const res = await axios.get(
-          `https://applergic-server.vercel.app/api/products`,
+          `https://applergic-server-react.vercel.app/api/products`,
           {
             params: { codes: diaryList },
             paramsSerializer: (params) => {

@@ -12,7 +12,7 @@ function FavoritesPage() {
 
   const getUser = async () => {
     const res = await axios.get(
-      `https://applergic-server.vercel.app/api/users/${idUser}`,
+      `https://applergic-server-react.vercel.app/api/users/${idUser}`,
       {
         headers: {
           Authorization: {
@@ -32,7 +32,7 @@ function FavoritesPage() {
     const idProduct = e.target.name;
     const deleteFavorite = async () => {
       const res = await axios.patch(
-        `https://applergic-server.vercel.app/api/users/delete/${idUser}/${idProduct}`,
+        `https://applergic-server-react.vercel.app/api/users/delete/${idUser}/${idProduct}`,
         {
           headers: {
             Authorization: {
