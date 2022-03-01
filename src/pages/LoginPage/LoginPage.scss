@@ -1,0 +1,148 @@
+@import "../../index.scss";
+.loginPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    width: 90vw;
+
+    h3 {
+      font-size: 20px;
+      margin: 16px 0;
+    }
+  }
+
+  &__form {
+    width: 90vw;
+
+    &--inp {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        background: transparent;
+        padding: 17px 0;
+        border: none;
+        border-bottom: 1px solid $grey;
+        outline: none;
+        margin: 10px 0;
+
+        &::placeholder {
+          color: $grey;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        color: $secondaryColor;
+        margin: 15px 0;
+      }
+
+      button {
+        width: 100%;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 20px 0;
+        color: #ffffff;
+        background: $secondaryColor;
+        letter-spacing: 0.06em;
+        padding: 0.8em 1.8em;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+      }
+
+      span {
+
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    span {
+      color: $grey;
+      margin: 10px 0px;
+      font-size: 14px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $secondaryColor;
+    }
+
+    h4 {
+      text-decoration: none;
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: $secondaryColor;
+      margin-bottom: 35px;
+    }
+  }
+}
+.button {
+  position: relative;
+  background-color: $secondaryColor;
+  border-radius: 4em;
+  font-size: 16px;
+  color: white;
+}
+
+.button:hover {
+  transition-duration: 0.1s;
+  background-color: $secondaryColor;
+}
+
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px rgba(179, 179, 179, 0.445);
+}
+
+.button:active:after {
+  box-shadow: 0 0 0 0 rgba(177, 177, 177, 0.322);
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.button:active {
+  top: 1px;
+}

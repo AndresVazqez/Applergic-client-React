@@ -1,0 +1,243 @@
+@import '../../../index.scss';
+
+.c-formthree {
+
+   // background: lightblue;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
+    &__title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+        //background: lightcoral;
+        
+        h2{
+
+            margin: 20px 0px;
+        }
+        p {
+
+            margin: 10px 0px;
+        }
+
+    }
+
+    &__abc{
+
+        display: flex;
+       //background: lightgreen;
+        justify-content: center;
+
+        &--letter{
+
+            display: flex;
+            flex-wrap: wrap;
+            //background: lightseagreen;
+            width: 250px;
+            height: 230px;
+            justify-content: center;
+            padding: 5px;
+            position: relative;
+            margin: 25px 0;
+
+            .absolute {
+                width: 90px;
+                height: 20px;
+                position: absolute;                
+                display: flex;
+                top: 0;
+                bottom: 90px;
+                right: 0;
+                left: 0;
+                margin: auto;                
+               // background: lightgoldenrodyellow;
+                font-size: 12px;
+                color: $grey;
+            }
+
+            &--item{
+
+                display: flex;                
+                justify-content: center;
+                align-items: center;
+                padding: 2px;              
+                width: 35px;
+                height: 35px;
+                background: $grey;
+                margin: 10px;
+                border-radius: 50%;
+
+                a{
+                    display: flex;                   
+                    margin: 0;
+                    padding: 0;
+                    text-decoration: none;
+                    color: #ffff;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+    }
+
+    &__form {
+
+        //background: lightpink;
+        width: 90%;
+
+
+        &--list{
+
+           // background: rgb(95, 180, 95);
+
+            &--item{
+
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background: $grey;
+                    text-align: 14px;
+                    padding: 2px;
+                    color: #fff;
+                }
+
+                img {
+
+                    width: 25px;
+                }
+            }
+
+            &--aller {
+
+               //background: lightgoldenrodyellow;
+                margin: 5px;
+                justify-content: flex-start;
+                display: flex;
+                flex-wrap: wrap;
+
+                
+
+                label {
+
+                    //background: lightgreen;
+                    height: 35px;
+                    border-radius: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px 20px;
+                    margin: 5px;
+                    color: $grey;
+                    text-transform: capitalize;
+                    border: 1px solid $grey;
+
+                }
+
+                input {
+                    display: none;
+
+                    &[type="checkbox"]:checked + label {
+
+                        background: $primaryColor;                       
+                        color: #fff;
+                        border: none;
+                        margin: 6px;
+                    }
+                }   
+    
+            }
+        } 
+        
+        button {
+        width: 100%;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 20px 0;
+        color: #ffffff;
+        background: $secondaryColor;
+        letter-spacing: 0.06em;
+        padding: 0.8em 1.8em;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+            
+        }
+    }
+} 
+
+.button {
+    position: relative;
+    background-color: $secondaryColor;
+    border-radius: 4em;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .button:hover {
+    transition-duration: 0.1s;
+    background-color: $secondaryColor;
+  }
+  
+  .button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px rgba(179, 179, 179, 0.445);
+  }
+  
+  .button:active:after {
+    box-shadow: 0 0 0 0 rgba(177, 177, 177, 0.322);
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .button:active {
+    top: 1px;
+  }
+
+  .show-c-formtrhee {
+      
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+
+
+  }
+
+  .hidden {
+
+    display: none;
+  }

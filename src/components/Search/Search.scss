@@ -1,0 +1,33 @@
+@import '../../index.scss';
+
+.c-section {
+  background: rgb(255, 255, 255);
+  display: flex-column;
+  text-align: center;
+  padding: auto;
+  padding-top: 10px;
+}
+
+.c-titleSearch {
+  text-align: center;
+
+  .c-titleSearch__title {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+.c-imput {
+  
+  color: #fff;
+  border: none;
+  margin: 6px;
+  margin: 20px;
+
+  input{
+    border:0;
+    border-bottom: 1px solid black;
+    
+
+  }
+}

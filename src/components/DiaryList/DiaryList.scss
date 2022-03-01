@@ -1,0 +1,143 @@
+@import '../../index.scss';
+
+.c-diaryList {
+    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icons {
+
+        display: flex;
+        justify-content: flex-end;       
+        width: 95%;
+        margin: 10px;
+
+        img {
+
+            width: 30px;
+            margin-left: 10px;            
+        }
+    }
+
+    &__title {
+
+        text-align: center;
+        width: 100%;
+
+        h3 {
+
+            margin-bottom: 20px;
+            padding: 0 60px;
+        }
+
+        p {
+
+            margin: 30px 40px;                                   
+        }
+    }
+
+    .green{
+
+        border-top: 1px solid #83D8AD;
+    }
+    .pink{
+        
+        border-top: 1px solid #FA92AA;
+    }
+ 
+
+    &__products {
+
+        margin: 0x auto; 
+        display: flex;
+        width: 100%;
+        padding: 15px 0;        
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+        
+        
+
+        &--img {
+            position: relative;
+            display: flex;           
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+
+           
+
+            &--frame {
+
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                width: 100px;           
+
+            }
+
+            &--product {
+
+                width: 70px;                
+                object-fit: cover;                
+                margin: 0 auto;                
+            }
+            
+        }
+
+        &--text {
+            width: 220px;
+            height: 100%;
+            display: flex;            
+            justify-content: flex-start;            
+            font-size: 12px;
+            margin: 5px;  
+        }        
+
+        &--icon {
+
+           // background: #FA92AA;
+
+           input {
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            background-image: url('https://res.cloudinary.com/dkv0drgbb/image/upload/v1644327667/close_3x_qcn0b4.png');
+            background-size: contain;
+            border: none;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+             
+           }
+        }
+    }
+
+    button {
+        width: 90%;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 20px 0;
+        color: #ffffff;
+        background: $secondaryColor;
+        letter-spacing: 0.06em;
+        padding: 0.8em 1.8em;
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        -webkit-transition-duration: 0.4s;
+      }
+}
