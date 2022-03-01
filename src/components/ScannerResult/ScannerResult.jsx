@@ -8,7 +8,7 @@ function ScannerResult({ props, props2 }) {
   const [isFavorite,setisFavorite] = useState(false);
   const addFavorite = () => {
     axios
-      .patch("https://applergic-server.vercel.app/api/users/" + props._id, {
+      .patch("https://applergic-server-react.vercel.app/api/users/" + props._id, {
         allergens: [...props.allergens],
         fav:
           props2 === ""
