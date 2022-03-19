@@ -1,17 +1,14 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import "./ScannerPage.scss";
-import axios from "axios";
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
 import Prueba from "../../components/Prueba/Prueba";
-import ScannerResult from "../../components/ScannerResult/ScannerResult";
 import { Link } from "react-router-dom";
-import { DiaryListContext } from "../../shared/DiaryListContext/DiaryListContext";
+
 function ScannerPage() {
   const [data, setData] = React.useState("Not found");
-  const [text, setText] = React.useState("codigo de barras");
   const [loading, setLoading] = useState(true);
   const [select, setSelect] = useState(true);
- 
+
   useEffect(() => {
     const loadData = async () => {
       await new Promise((r) => setTimeout(r, 1000));
@@ -48,7 +45,7 @@ function ScannerPage() {
             <div className="c-scannerPage__title--text">
               <h1>Escaneando...</h1>
               <p>
-                Tan solo tienes que centrar el <span>{select ? "código de barras" : "código QR" }</span> el producto
+                Tan solo tienes que centrar el <span>{select ? "código de barras" : "código QR"}</span> el producto
                 requerido.
               </p>
             </div>
@@ -71,13 +68,13 @@ function ScannerPage() {
                 onClick={() => setSelect(!select)}
                 className="c-scannerPage__scanner--btn--item"
               >
-                {select == true ? (
+                {select === true ? (
                   <img
                     src="https://res.cloudinary.com/dkv0drgbb/image/upload/v1644598851/oval_3x_xqzxrf.png"
                     alt="barCode icon"
                   />
                 ) : (
-                  <img src="https://res.cloudinary.com/dkv0drgbb/image/upload/v1644598840/barcode-negro_fbgvkc.png" />
+                  <img src="https://res.cloudinary.com/dkv0drgbb/image/upload/v1644598840/barcode-negro_fbgvkc.png" alt="black bar code"/>
                 )}
                 <p>Codigo de barras</p>
               </div>
@@ -86,7 +83,7 @@ function ScannerPage() {
                 onClick={() => setSelect(!select)}
                 className="c-scannerPage__scanner--btn--item"
               >
-                {select == false ? (
+                {select === false ? (
                   <img src="https://res.cloudinary.com/dkv0drgbb/image/upload/v1644598841/qr-azul_nevak1.png" />
                 ) : (
                   <img

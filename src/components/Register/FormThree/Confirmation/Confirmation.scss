@@ -4,7 +4,7 @@
 .c-confirmation {
 
     background: #ffff;
-    height: 100vh;
+    height: 667px;
     display: none;
     position: absolute;
     justify-content: center;
@@ -143,12 +143,13 @@
 
 .showConfirmation {
     
-   // background: lightcoral;
-    height: 100vh;
+    //background: lightcoral;
+    height: 600px;
+    width: 375px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 0;
+    top: 0px;
     z-index: 10;
     
 
@@ -272,7 +273,7 @@
         border: none;
         font-weight: 600;
         font-size: 16px;
-        margin: 20px 0;
+        margin: 20px 0 0;
         color: #ffffff;
         background: $secondaryColor;
         letter-spacing: 0.06em;

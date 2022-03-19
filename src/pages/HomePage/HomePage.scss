@@ -5,6 +5,7 @@
 .homepage {
 
   width: 100%;  
+  position: relative;
 
   
   &__header{
@@ -123,14 +124,13 @@
   }
 
 
-
 }
 .isloading {
   
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100%; 
 
   img {
     

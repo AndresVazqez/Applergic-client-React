@@ -14,6 +14,7 @@ import { DiaryListContext } from "./shared/DiaryListContext/DiaryListContext";
 import DiaryList from "./components/DiaryList/DiaryList";
 import SearchPage from "./pages/SearchPage/SearchPage";
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
+import './App.scss'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
   return (
     <DiaryListContext.Provider value={{ diaryList, setDiaryList }}>
       <JwtContext.Provider value={{ Jwt, setJwt }}>
-        <div>
+        <div className="app">
           <Router>
             <Routes>
               <Route exact path="/" element={<OnboardingPage />} />
