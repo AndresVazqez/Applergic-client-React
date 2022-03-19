@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoAnimation from "../../components/LogoAnimation/Logoanimation"
 
 import "./OnboardingPage.scss";
 const logo =
@@ -45,10 +44,12 @@ function OnboardingPage() {
     <>
       {splash && (
         <div  onClick={() => setSplash(false)}className="c-onboardingPage">
+
           <div className="c-onboardingPage__title">
             <h1>Applergic</h1>
             <h4>Mi guía alimentaria</h4>
           </div>
+
           <div className="c-onboardingPage__logo">
             <img className="rotate"
               src="https://res.cloudinary.com/dkv0drgbb/image/upload/v1644261304/logoApplergic_laexqz.png"
