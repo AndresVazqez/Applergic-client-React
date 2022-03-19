@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# important!
+## This app is made only in 375 x 667 resolution. 
+### It is not responsive because it was a project to be delivered in two weeks and only in mobile. In the next days when I finish another project, I will modify it. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 ## Available Scripts
 
