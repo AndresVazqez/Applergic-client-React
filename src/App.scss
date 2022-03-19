@@ -1,11 +1,10 @@
 .app {
-    background: lightblue;
-    max-width: 375px;
-    //border: 4px solid rgb(201, 35, 35);
-    aspect-ratio: 9/16;
+    background: lightblue;   
+    max-width: 414px;
     min-width: 375px;
-    height: 667px;
-    //max-height: 667px;
+    min-height: 667px;
+    max-height: 812px;     
+   
     overflow: overlay;
     background: #fff;
 
@@ -28,7 +27,6 @@
         &:active {
             background: rgb(121, 120, 120);
         }
-    }  
-   
+    }    
 
 }
